@@ -1,7 +1,0 @@
-const logoutForm = document.querySelector("#logout-form");
-
-function onLogoutSubmit(event) {
-  window.localStorage.clear();
-}
-
-logoutForm.addEventListener("click", onLogoutSubmit);

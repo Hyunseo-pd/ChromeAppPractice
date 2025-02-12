@@ -30,3 +30,7 @@ body {
   font-size: 20px;
   color: white;
 }
+
+#logout-form {
+  margin: 10px;
+}
