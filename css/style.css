@@ -1,3 +1,32 @@
 .hidden {
-    display: none;
+  display: none;
+}
+
+body {
+  text-align: center;
+}
+
+#clock {
+  font-size: 100px;
+  color: white;
+}
+
+#greeting {
+  font-size: 50px;
+  color: white;
+}
+
+#quote {
+  font-size: 20px;
+  color: white;
+}
+
+#weather {
+  font-size: 20px;
+  color: white;
+}
+
+#todo-list {
+  font-size: 20px;
+  color: white;
 }
