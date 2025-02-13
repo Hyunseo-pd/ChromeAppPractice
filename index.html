@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="randomBg">
+    <header></header>
+    <h2 id="clock"></h2>
     <form  class="hidden" id="login-form">
         <input 
         required
@@ -14,16 +16,18 @@
         placeholder="What is your name?"></input>
         <button>Log In</button>
     </form>
-    <h2 id="clock"></h2>
     <h1 id="greeting" class="hidden"></h1>
-    <button id="logout-form" class="hidden">Log Out</button>
+    <form>
+        <button id="logout-form" class="hidden">Log Out</button>
+    </form>
     <form id="todo-form">
         <input type="text" placeholder="Write a To Do and Press Enter." required/>
     </form>
     <ul id="todo-list" ></ul>
     <div id="quote">
-        <span></span>
-        <span></span>
+        <span class="quoteContent"></span>
+        <br>
+        <span class="quoteAuthor"></span>
     </div>
     <div id="weather">
         <span></span>
@@ -36,6 +40,5 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
-    <script src="js/logout.js"></script>
 </body>
 </html>

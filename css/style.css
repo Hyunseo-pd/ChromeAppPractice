@@ -6,24 +6,30 @@ body {
   text-align: center;
 }
 
+header {
+  height: 50px;
+}
+
 #clock {
   font-size: 100px;
   color: white;
 }
 
+#login-form {
+  margin: 10px;
+}
+
+#logout-form {
+  margin: 10px;
+}
+
 #greeting {
-  font-size: 50px;
+  font-size: 30px;
   color: white;
 }
 
-#quote {
-  font-size: 20px;
-  color: white;
-}
-
-#weather {
-  font-size: 20px;
-  color: white;
+#todo-form {
+  margin: 10px;
 }
 
 #todo-list {
@@ -31,6 +37,23 @@ body {
   color: white;
 }
 
-#logout-form {
-  margin: 10px;
+#quote {
+}
+
+.quoteContent {
+  display: inline-block;
+  width: 800px;
+  font-size: 20px;
+  color: white;
+}
+
+.quoteAuthor {
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+}
+
+#weather {
+  font-size: 20px;
+  color: white;
 }
