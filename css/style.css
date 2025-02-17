@@ -32,6 +32,11 @@ header {
   margin: 10px;
 }
 
+#login-form input {
+  height: 50px;
+  font-size: large;
+}
+
 #logout-form {
   margin: 10px;
 }

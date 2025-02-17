@@ -30,7 +30,9 @@ function onLogoutSubmit(event) {
 }
 
 function paintLogout() {
+  const toDoForm = document.getElementById("todo-form");
   logoutForm.classList.remove(HIDDEN_CLASSNAME);
+  toDoForm.classList.remove(HIDDEN_CLASSNAME);
   logoutForm.addEventListener("click", onLogoutSubmit);
 }
 
