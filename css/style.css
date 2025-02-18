@@ -1,9 +1,26 @@
+@font-face {
+  font-family: "Pretendard Regular";
+  font-weight: 400;
+  src: url("../fonts/Pretendard-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Pretendard Medium";
+  font-weight: 500;
+  src: url("../fonts/Pretendard-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Pretendard Semibold";
+  font-weight: 600;
+  src: url("../fonts/Pretendard-SemiBold.otf") format("opentype");
+}
+
 .hidden {
   display: none;
 }
 
 body {
-  text-align: center;
   background-size: cover;
 }
 
@@ -19,29 +36,85 @@ body::before {
 }
 
 header {
-  height: 100px;
+  height: 250px;
 }
 
 #clock {
-  font-size: 120px;
-  font-weight: lighter;
+  text-align: center;
+  font-family: "Pretendard Medium";
+  font-weight: 400;
+  font-size: 156px;
   color: white;
 }
 
 #login-form {
-  margin: 10px;
+  text-align: center;
+  font-family: "Pretendard Regular";
+  font-weight: 400;
+  margin: 20px;
 }
 
 #login-form input {
-  height: 50px;
-  font-size: large;
+  background-color: transparent;
+  border-width: 0 0 2 0;
+  border-color: white;
+  font-size: 30px;
+  color: white;
+  height: 60px;
+  width: 360px;
+}
+
+#login-form input::placeholder {
+  color: white;
+}
+
+#login-form input:focus {
+  outline: none;
+}
+
+#login-form button {
+  background-color: transparent;
+  border-color: white;
+  font-family: "Pretendard Regular";
+  font-weight: 400;
+  font-size: 28px;
+  color: white;
+  height: 60px;
+  width: 110px;
+}
+
+#login-form button:hover {
+  background-color: white;
+  border-color: white;
+  font-family: "Pretendard Regular";
+  font-weight: 400;
+  font-size: 32px;
+  color: black;
 }
 
 #logout-form {
   margin: 10px;
 }
 
+#logout-form {
+  background-color: transparent;
+  border-color: white;
+  font-family: "Pretendard Regular";
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  height: 50px;
+  width: 100px;
+}
+
+#logout-form:hover {
+  background-color: white;
+  color: black;
+}
+
 #greeting {
+  font-family: "Pretendard Regular";
+  font-weight: 400;
   font-size: 30px;
   color: white;
 }
@@ -55,20 +128,36 @@ header {
   color: white;
 }
 
-.quoteContent {
+#quote {
+  text-align: center;
+  position: relative;
+  top: 140px;
   display: inline-block;
-  width: 800px;
+  width: 100%;
+}
+
+.quoteContent {
+  font-family: "Pretendard Regular";
+  font-weight: 400;
   font-size: 20px;
   color: white;
+  display: inline-block;
+  width: 800px;
+  height: 36px;
 }
 
 .quoteAuthor {
-  font-size: 20px;
-  font-style: italic;
+  font-family: "Pretendard Regular";
+  font-weight: 400;
+  font-size: 18px;
   color: white;
+  text-transform: uppercase;
 }
 
 #weather {
+  font-family: "Pretendard Regular";
+  font-weight: 400;
   font-size: 20px;
   color: white;
+  text-align: right;
 }
