@@ -21,14 +21,16 @@
         placeholder="What is your name?"></input>
         <button>Log In</button>
     </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form>
+    <form class = "logout-form">
+        <h1 id="greeting" class="hidden"></h1>
         <button id="logout-form" class="hidden">Log Out</button>
     </form>
-    <form id="todo-form" class="hidden">
+    <div id = "todo-box" class="hidden">
+    <form id="todo-form">
         <input type="text" placeholder="Write a To Do and Press Enter." required/>
     </form>
     <ul id="todo-list" ></ul>
+    </div>
     <div id="quote">
         <span class="quoteContent"></span>
         <br>

@@ -41,7 +41,7 @@ header {
 
 #clock {
   text-align: center;
-  font-family: "Pretendard Medium";
+  font-family: "Pretendard regular";
   font-weight: 400;
   font-size: 156px;
   color: white;
@@ -55,6 +55,7 @@ header {
 }
 
 #login-form input {
+  margin-right: 30px;
   background-color: transparent;
   border-width: 0 0 2 0;
   border-color: white;
@@ -86,10 +87,14 @@ header {
 #login-form button:hover {
   background-color: white;
   border-color: white;
-  font-family: "Pretendard Regular";
-  font-weight: 400;
-  font-size: 32px;
+  font-family: "Pretendard Medium";
+  font-weight: 500;
+  font-size: 28px;
   color: black;
+}
+
+.logout-form {
+  text-align: center;
 }
 
 #logout-form {
@@ -101,15 +106,18 @@ header {
   border-color: white;
   font-family: "Pretendard Regular";
   font-weight: 400;
-  font-size: 20px;
+  font-size: 28px;
   color: white;
-  height: 50px;
-  width: 100px;
+  height: 60px;
+  width: 120px;
 }
 
 #logout-form:hover {
   background-color: white;
   color: black;
+  font-family: "Pretendard Medium";
+  font-weight: 500;
+  font-size: 28px;
 }
 
 #greeting {
@@ -117,10 +125,35 @@ header {
   font-weight: 400;
   font-size: 30px;
   color: white;
+  display: inline-block;
+}
+
+#todo-box {
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  width: 400px;
+  background-color: rgb(255, 255, 255, 0.4);
+  border-radius: 10px;
 }
 
 #todo-form {
   margin: 10px;
+}
+
+#todo-form input {
+  background-color: transparent;
+  border-width: 0 0 2 0;
+  border-color: white;
+  font-size: 20px;
+  color: white;
+  height: 60px;
+  width: 360px;
+}
+
+#todo-form input::placeholder {
+  font-size: 20px;
+  color: white;
 }
 
 #todo-list {
