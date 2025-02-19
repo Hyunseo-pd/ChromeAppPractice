@@ -39,6 +39,25 @@ header {
   height: 250px;
 }
 
+#weather {
+  text-align: right;
+  margin-right: 20px;
+}
+
+#weather span:first-child {
+  font-family: "Pretendard Regular";
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+}
+
+#weather span:last-child {
+  font-family: "Pretendard Medium";
+  font-weight: 500;
+  font-size: 28px;
+  color: white;
+}
+
 #clock {
   text-align: center;
   font-family: "Pretendard regular";
@@ -74,6 +93,8 @@ header {
 }
 
 #login-form button {
+  transition: 0.2s;
+  border-style: solid;
   background-color: transparent;
   border-color: white;
   font-family: "Pretendard Regular";
@@ -85,12 +106,14 @@ header {
 }
 
 #login-form button:hover {
+  transition: 0.5s;
+  border-style: solid;
   background-color: white;
   border-color: white;
-  font-family: "Pretendard Medium";
-  font-weight: 500;
+  font-family: "Pretendard Regular";
+  font-weight: 400;
   font-size: 28px;
-  color: black;
+  color: rgb(0, 0, 0, 0.8);
 }
 
 .logout-form {
@@ -102,8 +125,11 @@ header {
 }
 
 #logout-form {
+  transition: 0.2s;
+  border-style: solid;
   background-color: transparent;
   border-color: white;
+
   font-family: "Pretendard Regular";
   font-weight: 400;
   font-size: 28px;
@@ -113,11 +139,15 @@ header {
 }
 
 #logout-form:hover {
+  transition: 0.5s;
+  border-style: solid;
   background-color: white;
-  color: black;
-  font-family: "Pretendard Medium";
-  font-weight: 500;
+  border-color: white;
+
+  font-family: "Pretendard Regular";
+  font-weight: 400;
   font-size: 28px;
+  color: rgb(0, 0, 0, 0.8);
 }
 
 #greeting {
@@ -135,20 +165,22 @@ header {
   width: 400px;
   background-color: rgb(255, 255, 255, 0.4);
   border-radius: 10px;
-}
-
-#todo-form {
-  margin: 10px;
+  margin: 20px;
 }
 
 #todo-form input {
   background-color: transparent;
-  border-width: 0 0 2 0;
+  border-width: 0 0 1 0;
   border-color: white;
   font-size: 20px;
   color: white;
-  height: 60px;
+  height: 40px;
   width: 360px;
+  margin: 20px;
+}
+
+#todo-form input:focus {
+  outline: none;
 }
 
 #todo-form input::placeholder {
@@ -161,10 +193,38 @@ header {
   color: white;
 }
 
+#todo-list button {
+  transition: 0.2s;
+  border-style: solid;
+  background-color: transparent;
+  border-color: white;
+  border-radius: 50%;
+
+  font-family: Pretendard-Regular;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  width: 22px;
+  height: 22px;
+}
+
+#todo-list button:hover {
+  transition: 0.5s;
+  border-style: solid;
+  background-color: white;
+  border-color: white;
+  border-radius: 50%;
+
+  font-family: Pretendard-Regular;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(0, 0, 0, 0.8);
+}
+
 #quote {
   text-align: center;
-  position: relative;
-  top: 140px;
+  position: absolute;
+  bottom: 30px;
   display: inline-block;
   width: 100%;
 }
@@ -185,12 +245,4 @@ header {
   font-size: 18px;
   color: white;
   text-transform: uppercase;
-}
-
-#weather {
-  font-family: "Pretendard Regular";
-  font-weight: 400;
-  font-size: 20px;
-  color: white;
-  text-align: right;
 }
