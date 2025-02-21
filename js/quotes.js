@@ -10,8 +10,8 @@ const quotes = [
   },
   {
     quote:
-      "When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us.",
-    author: "Helen Keller",
+      "All our dreams can come true, if we have the courage to pursue them.",
+    author: "Walt Disney",
   },
   {
     quote: "Not all those who wander are lost.",
@@ -28,12 +28,12 @@ const quotes = [
   },
   {
     quote:
-      "Do not go where the path may lead, go instead where there is no path and leave a trail",
+      "Do not go where the path may lead, go instead where there is no path and leave a trail.",
     author: "Ralph Waldo Emerson",
   },
   {
     quote:
-      "Go confidently in the direction of your dreams! Live the life you've imagined",
+      "Go confidently in the direction of your dreams! Live the life you've imagined.",
     author: "Henry David Thoreau",
   },
   {

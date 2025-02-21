@@ -1,11 +1,23 @@
-const images = ["0.jpg", "1.jpg", "2.jpg"];
+const images = [
+  "0.jpg",
+  "1.jpg",
+  "2.jpg",
+  "3.jpg",
+  "4.jpg",
+  "5.jpg",
+  "6.jpg",
+  "7.jpg",
+];
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
 //const bgImage = document.createElement("img");
 //bgImage.src = `img/${chosenImage}`;
+document.getElementById(
+  "randomBg"
+).style.backgroundImage = `url(img/${chosenImage})`;
 
-var category = "nature";
+/*var category = "nature";
 var width = 1920;
 var height = 1080;
 
@@ -23,4 +35,4 @@ fetch("https://api.api-ninjas.com/v1/randomimage?category=" + category, {
   })
   .catch((error) => {
     console.error("Error:", error);
-  });
+  });*/
